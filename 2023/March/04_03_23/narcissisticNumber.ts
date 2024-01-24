@@ -1,4 +1,4 @@
-function narcissistic(value: number): boolean {
+export const narcissistic = (value: number): boolean => {
   const arrFromNumber = value.toString().split("");
   const numberLength = arrFromNumber.length;
   const poweredNumsArr = arrFromNumber.map((number) =>
@@ -9,5 +9,3 @@ function narcissistic(value: number): boolean {
 }
 
 narcissistic(7);
-
-module.exports = narcissistic;
